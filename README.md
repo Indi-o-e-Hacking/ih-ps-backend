@@ -65,7 +65,7 @@ python manage.py runserver
 #### Users Resource
 
 - **Register User**
-  - POST `/api/v1/users/register/`
+  - POST `/api/v1/users/register`
   - Creates a new user account
   - Required fields:
     - `username`: string
@@ -75,7 +75,7 @@ python manage.py runserver
     - `last_name`: string
 
 - **List Users**
-  - GET `/api/v1/users/`
+  - GET `/api/v1/users`
   - Returns a list of all users
   - Response includes:
     - `id`: number
@@ -108,7 +108,7 @@ python manage.py runserver
 ### Testing
 Run tests using:
 ```bash
-python manage.py test
+pytest
 ```
 
 ### Making Contributions

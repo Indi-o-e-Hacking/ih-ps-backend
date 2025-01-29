@@ -1,0 +1,67 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-03-14T10:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v8.5.1",
+  "resources": [
+    {
+      "_id": "req_ih_ps_backend_users",
+      "parentId": "wrk_ih_ps_backend",
+      "modified": 1710408000000,
+      "created": 1710408000000,
+      "url": "{{ _.base_url }}/api/v1/users",
+      "name": "List Users",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "_type": "request"
+    },
+    {
+      "_id": "req_ih_ps_backend_users_register",
+      "parentId": "wrk_ih_ps_backend",
+      "modified": 1710408000000,
+      "created": 1710408000000,
+      "url": "{{ _.base_url }}/api/v1/users/register",
+      "name": "Register User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"username\": \"testuser\",\n\t\"password\": \"testpass123\",\n\t\"email\": \"test@example.com\",\n\t\"first_name\": \"Test\",\n\t\"last_name\": \"User\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_ih_ps_backend",
+      "parentId": null,
+      "modified": 1710408000000,
+      "created": 1710408000000,
+      "name": "IH PS Backend",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_ih_ps_backend",
+      "parentId": "wrk_ih_ps_backend",
+      "modified": 1710408000000,
+      "created": 1710408000000,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:8000"
+      },
+      "_type": "environment"
+    }
+  ]
+} 
