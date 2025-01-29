@@ -8,7 +8,6 @@ This Django REST API project provides a backend service implementing basic CRUD 
 - Django 4.2+
 - Django REST Framework
 - PostgreSQL
-- Docker (optional)
 
 ## Setup Instructions
 
@@ -63,35 +62,27 @@ python manage.py runserver
 
 ### Endpoints
 
-#### Items Resource
+#### Users Resource
 
-- **List Items**
-- GET `/api/v1/items/`
-- Returns a list of all items
-- Query parameters:
-    - `page`: Page number for pagination
-    - `search`: Search term
+- **Register User**
+  - POST `/api/v1/users/register/`
+  - Creates a new user account
+  - Required fields:
+    - `username`: string
+    - `password`: string
+    - `email`: string
+    - `first_name`: string
+    - `last_name`: string
 
-- **Retrieve Single Item**
-- GET `/api/v1/items/{id}/`
-- Returns details of a specific item
-
-- **Create Item**
-- POST `/api/v1/items/`
-- Creates a new item
-- Required fields:
-    - `name`: string
-    - `description`: string
-    - `price`: decimal
-
-- **Update Item**
-- PUT `/api/v1/items/{id}/`
-- Updates an existing item
-- Same fields as CREATE
-
-- **Delete Item**
-- DELETE `/api/v1/items/{id}/`
-- Deletes an item
+- **List Users**
+  - GET `/api/v1/users/`
+  - Returns a list of all users
+  - Response includes:
+    - `id`: number
+    - `username`: string
+    - `email`: string
+    - `first_name`: string
+    - `last_name`: string
 
 ### Response Format
 ```json
