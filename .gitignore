@@ -1,0 +1,82 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+static/
+staticfiles/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+.history
+
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# IDE - Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Local Development
+*.bak
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Coverage and Test
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.pytest_cache/
+
