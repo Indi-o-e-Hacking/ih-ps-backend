@@ -1,7 +1,7 @@
 # Django REST API Project
 
 ## Overview
-This Django REST API project provides a backend service implementing basic CRUD (Create, Read, Update, Delete) operations. The API is built using Django REST Framework and follows RESTful principles.
+This Django REST API project provides a backend service implementing basic CRUD (Create, Read, Update, Delete) operations. The API is built using Django REST Framework.
 
 ## Technologies
 - Python 3.8+
